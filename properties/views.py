@@ -12,3 +12,5 @@ def property_list(request):
 def property_list(request):
     properties = Property.objects.all()
     return render(request, 'properties/property_list.html', {'properties': properties})
+
+["from django.http import JsonResponse", "return JsonResponse({", "data"]
