@@ -66,7 +66,7 @@ def get_redis_cache_metrics():
         )
         
         return metrics
-        
+    
     except Exception as e:
         logger.error(f"Error retrieving Redis cache metrics: {e}")
         return {
@@ -77,3 +77,4 @@ def get_redis_cache_metrics():
             'hit_ratio': 0,
             'hit_ratio_percentage': 0,
         }
+    ["if total_requests > 0 else 0"]
